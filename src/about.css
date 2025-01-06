@@ -1,0 +1,56 @@
+body{
+    overflow: auto;
+   
+}
+main{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin: auto;
+    margin-bottom: 2em;
+}
+main img {
+    position: absolute;
+    right: 5em;
+    top: 5em;
+    display: block;
+    margin-bottom: 8px;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 1px solid;
+}
+main h1{
+    margin: 2em;
+    text-align: center;
+}
+
+.sections section, .sections video{
+    margin: 1em;
+    width: 80%;
+    border: 1px solid;
+}
+.sections section h1{
+    margin-bottom: .5em;
+}
+main .sections .skills ul{
+  list-style: none;
+}
+main .sections .skills .languages{
+    font-weight: bold;
+}
+main .btn{
+    background-color: gold;
+    padding: 1em 2em;
+    border-radius: .5em;
+    text-decoration: none;
+    
+   
+}
+@media screen and (min-width: 992px),
+screen and (min-width: 728px) and (orientation: landscape) {
+    .sections{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+}

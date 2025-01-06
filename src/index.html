@@ -4,7 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Shmuye Ayalneh</title>
-
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="index.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.0/css/all.min.css"
@@ -16,29 +17,28 @@
   <body>
     <header>
       <nav>
-        <ul>
-          <li>Shmuye.</li>
+        <p class="logo">Shmuye.</p>
+        <ul class="main-bar">
           <li><a href="index.html">Home</a></li>
           <li><a href="About.html">About</a></li>
           <li><a href="services.html">Services</a></li>
           <li><a href="projects.html">projects</a></li>
           <li><a href="contact.html">Contact</a></li>
           <li class="menu" onclick="showSideBar()">
-            <a href="#">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                height="24px"
-                viewBox="0 -960 960 960"
-                width="24px"
-                fill="#222"
-              >
-                <path
-                  d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"
-                /></svg
-            ></a>
-          </li>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="24px"
+              viewBox="0 -960 960 960"
+              width="24px"
+              fill="#222"
+            >
+              <path
+                d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"
+              /></svg
+         </li>
         </ul>
-        <ul class="side-bar">
+        
+        <ul id="side-bar">
           <li onclick="hideSideBar()">
             <a href="#"
               ><svg
@@ -61,15 +61,17 @@
         </ul>
       </nav>
     </header>
-    <img src="./images/dv-img.jpg" alt="profile picture of Shmuye Ayalneh" />
     <main>
-      <h1>Welcome</h1>
-      <p>
-        Hi,I am Shmuye.I'm third-year Software Engineering student passionate
-        About technology and innovation.welcome to my website where I showcase
-        the projects I have been working on.This platform highlights my
-        skills,creativity,and dedication to problem solving.
-      </p>
+      <img src="./images/dv-img.jpg" alt="profile picture of Shmuye Ayalneh" />
+      <section>
+        <h1>Welcome</h1>
+        <p>
+          Hi,I am Shmuye.I'm third-year Software Engineering student passionate
+          About technology and innovation.welcome to my website where I showcase
+          the projects I have been working on.This platform highlights my
+          skills,creativity,and dedication to problem solving.
+        </p>
+      </section>
     </main>
     <nav class="social-media">
       <a href="https://www.facebook.com/Shumuye-A" aria-label="go to facebook"
@@ -93,9 +95,6 @@
         reserved-designed by Shmuye Ayalneh
       </p>
     </footer>
-    <script>
-      const year = new Date().getFullYear();
-      document.getElementById("year").textContent = year;
-    </script>
+    <script src="script.js"></script>
   </body>
 </html>

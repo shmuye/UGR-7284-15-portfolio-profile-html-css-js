@@ -4,6 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Shmuye Ayalneh</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="about.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.0/css/all.min.css"
@@ -15,8 +17,8 @@
   <body>
     <header>
       <nav>
-        <ul>
-          <li>Shmuye.</li>
+        <p class="logo">Shmuye.</p>
+        <ul class="main-bar">
           <li><a href="index.html">Home</a></li>
           <li><a href="About.html">About</a></li>
           <li><a href="services.html">Services</a></li>
@@ -37,7 +39,7 @@
             ></a>
           </li>
         </ul>
-        <ul class="side-bar">
+        <ul id="side-bar">
           <li onclick="hideSideBar()">
             <a href="#"
               ><svg
@@ -60,10 +62,10 @@
         </ul>
       </nav>
     </header>
-    <img src="./images/dv-img.jpg" alt="Profile picture of Shmuye Ayalneh" />
     <main>
+      <img src="./images/dv-img.jpg" alt="Profile picture of Shmuye Ayalneh" />
       <h1>About Me</h1>
-      <section>
+      <div class="sections">
         <section>
           <h2>Who am I</h2>
           <p>
@@ -77,26 +79,32 @@
           <h2>Education</h2>
           <p>Bachelor of software engineering,Addis Ababa University</p>
         </section>
-        <section>
+        <section class="skills">
           <h2>My skills</h2>
           <ul>
             <li>
-              Python - A versatile programming language known for its simplicity
-              and readability.
+              <span class="languages">Python </span>- A versatile programming
+              language known for its simplicity and readability.
             </li>
             <li>
-              Java - A widely-used language for building platform-independent
-              applications.
+              <span class="languages">Java</span> - A widely-used language for
+              building platform-independent applications.
             </li>
             <li>
-              Javascript - The backbone of dynamic and interactive web
-              development.
+              <span class="languages">Javascript</span> - The backbone of
+              dynamic and interactive web development.
             </li>
-            <li>CSS - Used to style and design the layout of web pages.</li>
-            <li>HTML - The standard markup language for creating web pages.</li>
             <li>
-              Git - A version control system for tracking changes in source code
-              during software development.
+              <span class="languages">CSS</span> - Used to style and design the
+              layout of web pages.
+            </li>
+            <li>
+              <span class="languages">HTML</span> - The standard markup language
+              for creating web pages.
+            </li>
+            <li>
+              <span class="languages">Git</span> - A version control system for
+              tracking changes in source code during software development.
             </li>
           </ul>
         </section>
@@ -108,11 +116,11 @@
           width="600"
           src="./videos/python-recording.mp4"
         ></video>
-      </section>
+      </div>
 
-      <a href="./My Resume (1).pdf" download="shmuye_ayalneh-cv">
-      <button>Download CV</button>
-      </a
+      <a href="./My Resume (1).pdf" download="shmuye_ayalneh-cv" class="btn">
+        Download CV
+      </a>
     </main>
     <nav class="social-media">
       <a href="https://www.facebook.com/Shumuye-A" aria-label="go to facebook"
@@ -136,5 +144,6 @@
         reserved-designed by Shmuye Ayalneh
       </p>
     </footer>
+    <script src="script.js"></script>
   </body>
 </html>

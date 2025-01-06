@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    font-family: 'Roboto', sans-serif;
+    overflow: auto;
+
+}
+
+header nav .logo {
+    font-weight: bold;
+}
+
+header nav {
+    padding: 1em 5%;
+    background-color: #b6b5af;
+}
+
+header nav ul {
+    list-style: none;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: #2f2904;
+}
+
+header nav .main-bar {
+    display: none;
+}
+
+header nav .main-bar .menu {
+    display: inline-block;
+    cursor: pointer;
+}
+
+header nav .main-bar li a {
+    cursor: pointer;
+    margin: 0 1em;
+    background-color: #ffd700;
+    border: 1px solid;
+    font-size: 1em;
+    padding: .5em 1em;
+    border-radius: .5em;
+    text-align: center;
+}
+
+header nav #side-bar {
+    position: fixed;
+    right: 0;
+    top: 0;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    background-color: #b6b5af;
+    color: #2f2904;
+    padding: 1em;
+    z-index: 99;
+}
+
+header nav #side-bar li {
+    margin-bottom: 1em;
+}
+
+.social-media {
+    border: 1px solid;
+    position: fixed;
+    bottom: 5em;
+    left: 2em;
+}
+
+.social-media a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 1.5em;
+    margin: .5em;
+    background-color: #b6b5af;
+}
+
+footer {
+    width: 100%;
+    background-color: #b6b5af;
+    position: fixed;
+    bottom: 0;
+    padding: 1em 5%;
+    text-align: center;
+}
+
+footer p {
+    width: 80%;
+    margin: auto;
+}
+
+@media screen and (max-width: 600px) and (orientation: landscape) {
+    footer p {
+        width: 100%;
+    }
+
+}
+
+@media screen and (min-width: 992px),
+screen and (min-width: 728px) and (orientation: landscape) {
+    header nav {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    header nav .main-bar {
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    header nav .main-bar .menu {
+        display: none;
+    }
+
+    .social-media {
+        display: flex;
+        flex-direction: column;
+    }
+
+
+}

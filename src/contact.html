@@ -4,6 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Shmuye Ayalneh</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="contact.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.0/css/all.min.css"
@@ -15,8 +17,8 @@
   <body>
     <header>
       <nav>
-        <ul>
-          <li>Shmuye.</li>
+        <p class="logo">Shmuye.</p>
+        <ul class="main-bar">
           <li><a href="index.html">Home</a></li>
           <li><a href="About.html">About</a></li>
           <li><a href="services.html">Services</a></li>
@@ -37,7 +39,7 @@
             ></a>
           </li>
         </ul>
-        <ul class="side-bar">
+        <ul id="side-bar">
           <li onclick="hideSideBar()">
             <a href="#"
               ><svg
@@ -65,25 +67,31 @@
       <section>
         <form action="#">
           <label for="name">Name</label>
-          <input type="text" id="name" />
+          <input type="text" id="name" required />
           <label for="email">Email</label>
-          <input type="text" id="email" />
+          <input type="text" id="email" required />
           <label for="message">Message</label>
-          <textarea name="message" id="message"></textarea>
-          <button type="submit">send</button>
+          <textarea
+            name="message"
+            id="message"
+            cols="5"
+            rows="5"
+            required
+          ></textarea>
+          <button type="submit" class="btn">send</button>
         </form>
         <address>
           <i class="fa fa-phone" aria-hidden="true"></i>
-          <p>phone: +251715415160</p>
+          <p><span>phone</span> : +251715415160</p>
           <p>
-            Email:
+            <span>Email</span>:
             <a href="mailto:shmuyeay21@gmail.com">shmuyeay21@gmail.com</a>
           </p>
-          <p>Address: Addis Ababa University,Arat Kilo Campus</p>
+          <p><span>Address</span>: Addis Ababa University,Arat Kilo Campus</p>
         </address>
       </section>
     </main>
-    <nav>
+    <nav class="social-media">
       <a href="https://www.facebook.com/Shumuye-A" aria-label="go to facebook"
         ><i class="fa-brands fa-facebook"></i
       ></a>
@@ -105,5 +113,6 @@
         reserved-designed by Shmuye Ayalneh
       </p>
     </footer>
+    <script src="script.js"></script>
   </body>
 </html>

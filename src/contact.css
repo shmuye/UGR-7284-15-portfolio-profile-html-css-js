@@ -1,0 +1,10 @@
+@media screen and (min-width: 992px),
+screen and (min-width: 728px) and (orientation: landscape) {
+    main section {
+        flex-direction: row;
+    }
+
+    main section form {
+        margin-right: 5em;
+    }
+}

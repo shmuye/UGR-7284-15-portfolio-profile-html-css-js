@@ -1,0 +1,52 @@
+main {
+    width: 80%;
+    margin: auto;
+}
+
+main h1 {
+    text-align: center;
+    margin: 1em;
+}
+
+main section figure {
+    width: 80%;
+    text-align: center;
+    margin: 1em;
+    border: 1px solid;
+    height: auto;
+    background-color: darkcyan;
+
+
+}
+
+main section figure img {
+    max-width: 100%;
+
+}
+
+main section figure figcaption {
+    text-align: center;
+    width: 100%;
+    padding: 2em;
+}
+
+main section figure figcaption h2 {
+    margin-bottom: 1em;
+}
+
+main section figure figcaption .btn {
+    background-color: gold;
+    padding: 1em 2em;
+    border-radius: .5em;
+    text-decoration: none;
+    text-align: center;
+
+}
+
+@media screen and (min-width: 992px),
+screen and (min-width: 728px) and (orientation: landscape) {
+    main section {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+}
