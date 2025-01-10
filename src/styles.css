@@ -1,0 +1,139 @@
+:root {
+    --brand: #ffd900;
+    --text-strong: #2f2904;
+    --text-weak: #595226;
+    --stroke-strong: #6e6635;
+    --stroke-weak: #a3a08f;
+    --fill: #b6b5af;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header nav {
+    background-color: var(--fill);
+    padding: 2em 5%;
+    display: flex;
+    justify-content: space-between;
+    box-shadow: 1px 1px 2px var(--stroke-strong);
+}
+
+header nav .logo {
+    color: var(--text-strong);
+    font-weight: bold;
+}
+
+header nav ul {
+    display: flex;
+    list-style: none;
+}
+
+header nav .main-bar li {
+    display: none;
+}
+
+header nav .main-bar li {
+    display: none;
+}
+
+header nav .main-bar .menu {
+    display: block;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: var(--text-strong);
+}
+
+header nav #side-bar {
+    background-color: var(--fill);
+    box-shadow: -1px 1px 1px var(--stroke-strong);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    right: 0;
+    top: 2em;
+    z-index: 99;
+    width: 25%;
+}
+
+header nav #side-bar li {
+    margin-bottom: 1em;
+}
+
+.social-media {
+    display: flex;
+    position: sticky;
+    bottom: 2em;
+}
+
+.social-media a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 3em;
+    height: 3em;
+    border-radius: 50%;
+    background-color: darkgray;
+    margin: .5em;
+}
+
+.social-media a img {
+    width: 1em;
+
+}
+
+footer {
+    padding: 2em;
+    background-color: var(--fill);
+    width: 100%;
+    text-align: center;
+}
+
+
+
+@media screen and (max-width: 600px) and (orientation: landscape) {
+    footer p {
+        width: 100%;
+    }
+
+}
+
+@media screen and (min-width: 992px),
+screen and (min-width: 728px) and (orientation: landscape) {
+    header nav .main-bar li {
+        display: block;
+        margin-left: 2em;
+    }
+
+    header nav .main-bar li a {
+        background-color: var(--brand);
+        padding: 1em 2em;
+        border-radius: .5em;
+        border: 1px solid var(--stroke-strong);
+    }
+
+    header nav .main-bar .menu {
+        display: none;
+    }
+
+    header nav #side-bar {
+        display: none;
+    }
+
+
+
+    .social-media {
+        flex-direction: column;
+    }
+}

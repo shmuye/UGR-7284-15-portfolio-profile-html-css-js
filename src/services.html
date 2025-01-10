@@ -4,6 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Shmuye Ayalneh</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="service.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.0/css/all.min.css"
@@ -15,8 +17,8 @@
   <body>
     <header>
       <nav>
-        <ul>
-          <li>Shmuye.</li>
+        <p class="logo">Shmuye.</p>
+        <ul class="main-bar">
           <li><a href="index.html">Home</a></li>
           <li><a href="About.html">About</a></li>
           <li><a href="services.html">Services</a></li>
@@ -37,7 +39,7 @@
             ></a>
           </li>
         </ul>
-        <ul class="side-bar">
+        <ul id="side-bar">
           <li onclick="hideSideBar()">
             <a href="#"
               ><svg
@@ -62,49 +64,46 @@
     </header>
     <main>
       <h1>Services</h1>
-      <article>
-        <section>
-          <h2>custom website design</h2>
+      <section>
+        <article>
+          <h2>Custom website design</h2>
           <p>
             Craft unique, visually stunning, and user-friendly designs that
             reflect your brand identity.
           </p>
-        </section>
-        <section>
+        </article>
+        <article>
           <h2>E-commerce website development</h2>
           <p>
             Build feature-rich online stores tailored to your business needs.
           </p>
-        </section>
-        <section>
+        </article>
+        <article>
           <h2>Front-End website development</h2>
           <p>
             Develop seamless, interactive, and responsive web interfaces using
             the latest technologies.
           </p>
-        </section>
-        <section>
+        </article>
+        <article>
           <h2>Website maintenance and support</h2>
           <p>Keep your website secure, updated, and performing optimally.</p>
-        </section>
-      </article>
-      <a href="contact.html" class="contact-link">contact me</a>
+        </article>
+      </section>
+      <a href="contact.html" class="btn">contact me</a>
     </main>
     <nav class="social-media">
       <a href="https://www.facebook.com/Shumuye-A" aria-label="go to facebook"
-        ><i class="fa-brands fa-facebook"></i
-      ></a>
+       >
+      <img src="images/facebook-logo-24.png" alt="facebook logo"></a>
       <a
         href="https://www.linkedin.com/in/Shmuye-Ayalneh"
         aria-label="go to  linkedin"
-        ><i class="fa-brands fa-linkedin"></i
-      ></a>
+        ><img src="images/linkedin-logo-24.png" alt="linkedin logo"></a>
       <a href="https://t.me/shmuye27" aria-label="go to telegram"
-        ><i class="fa-brands fa-telegram"></i
-      ></a>
+        ><img src="images/telegram-logo-24.png" alt="telegram logo"></a>
       <a href="https://github.com/shmuye" aria-label="go to github"
-        ><i class="fa-brands fa-github"></i
-      ></a>
+        ><img src="images/github-logo-24.png" alt="github logo"></a>
     </nav>
     <footer>
       <p>
@@ -112,5 +111,6 @@
         reserved-designed by Shmuye Ayalneh
       </p>
     </footer>
+    <script src="script.js"></script>
   </body>
 </html>

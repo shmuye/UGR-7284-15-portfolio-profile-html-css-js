@@ -1,0 +1,56 @@
+:root {
+    --brand: #ffd900;
+    --text-strong: #2f2904;
+    --text-weak: #595226;
+    --stroke-strong: #6e6635;
+    --stroke-weak: #a3a08f;
+    --fill: #b6b5af;
+}
+
+main {
+    padding: 2em;
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+main h1 {
+    color: var(--text-strong);
+    margin: 1em;
+    display: block;
+    text-align: center;
+}
+
+main article {
+    margin-bottom: 2em;
+}
+
+
+
+main article h2 {
+    font-size: 1.2em;
+    margin-bottom: .5em;
+}
+
+main .btn {
+    display: block;
+    width: 200px;
+    margin: auto;
+    background-color: gold;
+    padding: 1em 2em;
+    border-radius: .5em;
+    border: 1px solid var(--stroke-strong);
+    text-decoration: none;
+    text-align: center;
+
+}
+
+@media screen and (min-width: 992px),
+screen and (min-width: 728px) and (orientation: landscape) {
+    main section {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 3em;
+    }
+}
