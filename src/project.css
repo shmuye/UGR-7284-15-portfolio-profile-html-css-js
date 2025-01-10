@@ -21,7 +21,7 @@ main section figure {
     width: 80%;
     text-align: center;
     margin: 1em;
-    border: 1px solid;
+    border: 1px solid var(--stroke-strong);
     height: auto;
     background-color: var(--fill);
 
@@ -45,7 +45,7 @@ main section figure figcaption h2 {
 
 main section figure figcaption .btn {
     background-color: gold;
-    padding: 1em 2em;
+    padding: .5em 1em;
     border-radius: .5em;
     border: 1px solid var(--stroke-strong);
     text-decoration: none;

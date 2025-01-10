@@ -56,7 +56,6 @@ header nav ul li a {
 
 header nav #side-bar {
     background-color: var(--fill);
-    box-shadow: -1px 1px 1px var(--stroke-strong);
     display: flex;
     flex-direction: column;
     align-items: center;

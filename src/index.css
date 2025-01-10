@@ -1,3 +1,8 @@
+main {
+    width: 80%;
+    margin: auto;
+}
+
 main img {
     float: right;
     display: block;
@@ -12,19 +17,14 @@ main img {
     margin: 1em;
 }
 
-main {
-    width: 80%;
-    margin: auto;
+main h1 {
+    margin-bottom: 16px;
 }
 
 main section {
     position: absolute;
     width: 60%;
     top: 10em;
-}
-
-main h1 {
-    margin-bottom: 16px;
 }
 
 main p {
