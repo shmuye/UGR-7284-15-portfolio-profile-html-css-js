@@ -1,14 +1,16 @@
-body{
+body {
     overflow: auto;
-   
+
 }
-main{
+
+main {
     display: flex;
     flex-direction: column;
     width: 80%;
     margin: auto;
     margin-bottom: 2em;
 }
+
 main img {
     position: absolute;
     right: 5em;
@@ -20,36 +22,52 @@ main img {
     border-radius: 50%;
     border: 1px solid;
 }
-main h1{
+
+main h1 {
     margin: 2em;
     text-align: center;
 }
 
-.sections section, .sections video{
+.sections section,
+.sections video {
     margin: 1em;
     width: 80%;
     border: 1px solid;
 }
-.sections section h1{
+
+.sections section h2 {
     margin-bottom: .5em;
 }
-main .sections .skills ul{
-  list-style: none;
+
+main .sections .skills ul {
+    list-style: none;
 }
-main .sections .skills .languages{
+
+main .sections .skills .languages {
     font-weight: bold;
+
 }
-main .btn{
+
+main .btn {
     background-color: gold;
     padding: 1em 2em;
     border-radius: .5em;
+    border: 1px solid var(--stroke-strong);
     text-decoration: none;
-    
-   
+    width: 10em;
+    margin: auto;
 }
+
+main img {
+    position: absolute;
+    top: 6em;
+    right: 2em;
+    margin: 1em;
+}
+
 @media screen and (min-width: 992px),
 screen and (min-width: 728px) and (orientation: landscape) {
-    .sections{
+    .sections {
         display: grid;
         grid-template-columns: 1fr 1fr;
     }

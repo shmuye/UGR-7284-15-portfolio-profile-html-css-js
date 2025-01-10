@@ -1,3 +1,12 @@
+:root {
+    --brand: #ffd900;
+    --text-strong: #2f2904;
+    --text-weak: #595226;
+    --stroke-strong: #6e6635;
+    --stroke-weak: #a3a08f;
+    --fill: #b6b5af;
+}
+
 main {
     width: 80%;
     margin: auto;
@@ -14,7 +23,7 @@ main section figure {
     margin: 1em;
     border: 1px solid;
     height: auto;
-    background-color: darkcyan;
+    background-color: var(--fill);
 
 
 }
@@ -38,6 +47,7 @@ main section figure figcaption .btn {
     background-color: gold;
     padding: 1em 2em;
     border-radius: .5em;
+    border: 1px solid var(--stroke-strong);
     text-decoration: none;
     text-align: center;
 
