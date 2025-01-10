@@ -83,13 +83,17 @@ header nav #side-bar li {
     width: 3em;
     height: 3em;
     border-radius: 50%;
-    background-color: darkgray;
+    background-color: var(--fill);
     margin: .5em;
 }
 
 .social-media a img {
     width: 1em;
 
+}
+
+.social-media a:hover {
+    background-color: hsl(51, 5%, 80%);
 }
 
 footer {
@@ -120,6 +124,11 @@ screen and (min-width: 728px) and (orientation: landscape) {
         padding: 1em 2em;
         border-radius: .5em;
         border: 1px solid var(--stroke-strong);
+    }
+
+    header nav .main-bar li a:hover {
+        background-color: hsl(51, 100%, 60%);
+        color: hsl(52, 84%, 5%);
     }
 
     header nav .main-bar .menu {
