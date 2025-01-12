@@ -28,6 +28,10 @@ main section figure {
 
 }
 
+main section figure:hover {
+    box-shadow: 2px 2px 2px var(--stroke-strong), 2px 2px -2px var(--stroke-strong);
+}
+
 main section figure img {
     max-width: 100%;
 
