@@ -30,6 +30,7 @@ header nav {
 header nav .logo {
     color: var(--text-strong);
     font-weight: bold;
+    font-size: 1em;
 }
 
 header nav ul {
@@ -51,6 +52,7 @@ header nav .main-bar .menu {
 
 header nav ul li a {
     text-decoration: none;
+    font-size: 1em;
     color: var(--text-strong);
 }
 
@@ -128,7 +130,7 @@ screen and (min-width: 728px) and (orientation: landscape) {
 
     header nav .main-bar li a:hover {
         background-color: hsl(51, 100%, 60%);
-        color: hsl(52, 84%, 5%);
+        color: hsl(52, 90%, 5%);
     }
 
     header nav .main-bar .menu {

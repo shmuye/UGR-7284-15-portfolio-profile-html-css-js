@@ -52,6 +52,12 @@ main section form .btn {
     left: 50%;
     top: 100%;
     transform: translateX(-50%);
+    cursor: pointer;
+}
+
+main section form .btn:hover {
+    background-color: hsl(51, 100%, 60%);
+    color: hsl(52, 90%, 5%);
 }
 
 main section address i {
@@ -68,6 +74,7 @@ main form textarea {
     width: 100%;
     padding: 1em;
     margin-bottom: 2em;
+    border: 1px solid var(--text-strong);
 }
 
 @media screen and (min-width: 992px),

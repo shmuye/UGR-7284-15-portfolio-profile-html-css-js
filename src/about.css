@@ -1,3 +1,12 @@
+:root {
+    --brand: #ffd900;
+    --text-strong: #2f2904;
+    --text-weak: #595226;
+    --stroke-strong: #6e6635;
+    --stroke-weak: #a3a08f;
+    --fill: #b6b5af;
+}
+
 body {
     overflow: auto;
 
@@ -26,13 +35,14 @@ main img {
 main h1 {
     margin: 2em;
     text-align: center;
+    color: var(--text-strong);
 }
 
 .sections section,
 .sections video {
     margin: 1em;
     width: 80%;
-    border: 1px solid;
+
 }
 
 .sections section h2 {
@@ -50,12 +60,19 @@ main .sections .skills .languages {
 
 main .btn {
     background-color: gold;
+    color: var(--text-strong);
     padding: 1em 2em;
     border-radius: .5em;
     border: 1px solid var(--stroke-strong);
     text-decoration: none;
     width: 10em;
     margin: auto;
+    cursor: pointer;
+}
+
+main .btn:hover {
+    background-color: hsl(51, 100%, 60%);
+    color: hsl(52, 90%, 5%);
 }
 
 main img {
