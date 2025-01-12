@@ -28,10 +28,6 @@ main section figure {
 
 }
 
-main section figure:hover {
-    box-shadow: 2px 2px 2px var(--stroke-strong), 2px 2px -2px var(--stroke-strong);
-}
-
 main section figure img {
     max-width: 100%;
 
@@ -49,12 +45,19 @@ main section figure figcaption h2 {
 
 main section figure figcaption .btn {
     background-color: gold;
-    padding: .5em 1em;
+    color: var(--text-strong);
+    padding: 1em 2em;
     border-radius: .5em;
     border: 1px solid var(--stroke-strong);
     text-decoration: none;
     text-align: center;
+    cursor: pointer;
 
+}
+
+main section figure figcaption .btn:hover {
+    background-color: hsl(51, 100%, 60%);
+    color: hsl(52, 90%, 5%);
 }
 
 @media screen and (min-width: 992px),
